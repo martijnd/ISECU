@@ -54,7 +54,7 @@ Dan is het oorspronkelijke getal ook deelbaar door 3!
 
 ## Factorisatie
 
-- Het uit elkaar slopen van een getal in factoren: 24 = 2 $\times$ 12, 3 $\times$ 8 en 4 $\times$ 6.
+- Het uit elkaar slopen van een getal in factoren: 24 = 2 x 12, 3 x 8 en 4 x 6.
 - Makkelijk in sommige gevallen, moeilijk in andere gevallen
 - Het moeilijkste bij producten van priemgetallen
 
@@ -86,14 +86,14 @@ Bij ISEC gebruiken we RSA om asymcrypt te illustreren. RSA is in 1977 bedacht 
 **Een voorbeeld**
 
 - Kies 2 priemgetallen P (bv.61) en Q (bv. 53)
-- P $\times$ Q = N  
-  61 $\times$ 53 = 3233
+- P x Q = N  
+  61 x 53 = 3233
   N = 3233
 - I = KGV(P - 1, Q - 1)
   I = 780
 - Kies een willekeurig getal E, relatief priem tov. I: 17
-- Los op voor D: D $\times$ E mod I = 1
-- D $\times$ 17 mod 780 = 1
+- Los op voor D: D x E mod I = 1
+- D x 17 mod 780 = 1
 - D = 413
 
 De hoofdonderdelen van de keypair: N = 3233, E = 17, D = 413
