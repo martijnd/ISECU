@@ -173,7 +173,7 @@ Als je een certificaat besteld voor je webserver wordt dit gecrypt door de CA’
 - Sommige RA’s krijgen het recht om op basis van CA-certificaten zélf certificaten af te geven. Dit noemen we “Relegate CA’s”;
 - Door dit stelsel van CA’s, RCA’s en RA’s kunnen soms lange kettingen van ondertekende certificaten ontstaan: certificate chains.
 
-![certificates](images/certificates.png "certificates")
+![certificates](images/certificates.png "certificates")  
 Registration Authorities zijn verantwoordelijk voor het controleren van de aanvragen, zodat de CA kan garanderen dat de houder van een cert is wie hij zegt dat hij is. Dit heet “vetting”
 
 ## Het intrekken van certificaten
