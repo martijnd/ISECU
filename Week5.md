@@ -101,7 +101,7 @@ De eerste is makkelijk maar heeft wat problemen. Als de server’s connectie ond
 - Bedacht in 1977;
 - Opereert (net als RSA) op de aanname dat ontbinden in factoren van grote getallen lastig is;
 
-![diffie-hellman](images/diffie-hellman.png "diffie-hellman")
+![diffie-hellman](images/diffie-hellman.png "diffie-hellman")  
 Het plaatje legt conceptueel uit hoe DFH werkt. Beiden voeren een aparte berekening uit die op hetzelfde antwoord uitkomt. Dit antwoord wordt vervolgens gebruikt als sleutel voor de symmetrische encryptie
 
 ## Diffie-Hellman – de wiskunde
