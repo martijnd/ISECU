@@ -40,7 +40,8 @@ Hiervoor zijn nodig: **Standaardisatie, professionalisering, en meetbaarheid**
 
 Voorbeelden: geheimschrift, encryptie, toegangsbeperkingen
 
-> Vertaling: VertrouwelijkheidDit is het doel waar iedereen direct aan denkt wanneer ze met informatiebeveiliging te maken krijgen en betreft het beperken van toegang tot informatie. Echter, niet-toegankelijke informatie had net zo goed niet kunnen bestaan, dus wordt gebruiksrecht toegekend of ontzegd al naar gelang iemand deze toegang nodig heeft. Voorbeelden hiervan zijn ouderwets geheimschrift, de moderne computer-versie hiervan (enncryptie) en het beperken van toegang tot informatie, bijvoorbeeld door deze in een kluis op te bergen.
+> Vertaling: **Vertrouwelijkheid**
+> Dit is het doel waar iedereen direct aan denkt wanneer ze met informatiebeveiliging te maken krijgen en betreft het beperken van toegang tot informatie. Echter, niet-toegankelijke informatie had net zo goed niet kunnen bestaan, dus wordt gebruiksrecht toegekend of ontzegd al naar gelang iemand deze toegang nodig heeft. Voorbeelden hiervan zijn ouderwets geheimschrift, de moderne computer-versie hiervan (enncryptie) en het beperken van toegang tot informatie, bijvoorbeeld door deze in een kluis op te bergen.
 
 ### Integrity
 
@@ -51,7 +52,8 @@ Voorbeelden: geheimschrift, encryptie, toegangsbeperkingen
 
 Voorbeelden: redundante opslag, checksums, opslag op read-only media.
 
-> Vertaling: Onveranderlijkheid of integriteitDit doel is iets minder vanzelfsprekend maar minstens net zo belangrijk. Integriteit betreft garanderen dat informatie niet ongewenst verandert – vernietiging is in deze context óók een wijziging. Dat kan betekenen dat wijzigingen aantoonbaar moeten zijn, of dat deze onmogelijk gemaakt moeten worden. Dit is afhankelijk van de vereisten die aan de informatie gesteld worden. Voorbeelden zijn redundante opslag, bijvoorbeeld door middel van backups, het maken van checksums (komen in een latere les aan bod) en opslag op alleen-lezen media zoals een DVD.
+> Vertaling: **Onveranderlijkheid of integriteit**
+> Dit doel is iets minder vanzelfsprekend maar minstens net zo belangrijk. Integriteit betreft garanderen dat informatie niet ongewenst verandert – vernietiging is in deze context óók een wijziging. Dat kan betekenen dat wijzigingen aantoonbaar moeten zijn, of dat deze onmogelijk gemaakt moeten worden. Dit is afhankelijk van de vereisten die aan de informatie gesteld worden. Voorbeelden zijn redundante opslag, bijvoorbeeld door middel van backups, het maken van checksums (komen in een latere les aan bod) en opslag op alleen-lezen media zoals een DVD.
 
 ### Availability
 
@@ -62,7 +64,9 @@ Voorbeelden: redundante opslag, checksums, opslag op read-only media.
 
 Voorbeelden: Fail-over, load-balancing, disaster recovery
 
-> Vertaling is “Beschikbaarheid”. Dit doel wordt vaak vergeten. Wanneer benodigd moeten de beoogde gebruikers toegang tot de informatie kunnen krijgen, anders had de informatie het net zo goed niet kunnen bestaan natuurlijk! Het garanderen van de beschikbaarheid van informatie wordt in de praktijk vaak bij IT-beheerders gelegd maar vergis je niet – het is echt een informatiebeveiligingscomponent!Voorbeelden van maatregelen om Availability te borgen zijn fail-over systemen (waarbij een defect apparaat automatisch wordt vervangen door een werkend apparaat), load-balancing (waarbij meerdere apparaten aan elkaar worden geknoopt om meer capaciteit te krijgen) en disaster recovery (waarbij maatregelen worden genomen om ook na een grote ramp de IT-dienstverlening weer op orde te krijgen).
+> Vertaling: **“Beschikbaarheid”**.
+> Dit doel wordt vaak vergeten. Wanneer benodigd moeten de beoogde gebruikers toegang tot de informatie kunnen krijgen, anders had de informatie het net zo goed niet kunnen bestaan natuurlijk! Het garanderen van de beschikbaarheid van informatie wordt in de praktijk vaak bij IT-beheerders gelegd maar vergis je niet – het is echt een informatiebeveiligingscomponent!
+> Voorbeelden van maatregelen om Availability te borgen zijn fail-over systemen (waarbij een defect apparaat automatisch wordt vervangen door een werkend apparaat), load-balancing (waarbij meerdere apparaten aan elkaar worden geknoopt om meer capaciteit te krijgen) en disaster recovery (waarbij maatregelen worden genomen om ook na een grote ramp de IT-dienstverlening weer op orde te krijgen).
 
 ## 3-, 4-, 5-, of 6-hoek?
 

@@ -64,12 +64,12 @@ MAAR DIT IS NIET WISKUNDIG BEWEZEN!
 
 ## Voorbeeld: RSA
 
-- Rivest, Shamir en Adleman (1977)
+- **R**ivest, **S**hamir en **A**dleman (1977)
 - Werkten bij MIT
-- Patent verkregen in 1983
+- Patent verkregen in **1983**
 - Inmiddels ingehaald door andere standaarden maar nog steeds grotendeels veilig
 
-Bij ISEC gebruiken we RSA om asymcrypt te illustreren. RSA is in 1977 bedacht door drie medewerkers van de MIT universiteit die iets te veel wijn hadden gedronken met Pesach. In 1983 is er een patent verstrekt en is RSA tot standaard verheven. Tegenwoordig zijn er andere, snellere en veiliger encryptieschemas als DSA, ECDSA en El Gamal, maar voor de meeste toepassingen is RSA nog steeds bruikbaar (de aanvallen zijn goeddeels theoretisch of hebben een beperkte impact).
+Bij ISEC gebruiken we RSA om **asymcrypt** te illustreren. RSA is in 1977 bedacht door drie medewerkers van de MIT universiteit die iets te veel wijn hadden gedronken met Pesach. In 1983 is er een patent verstrekt en is RSA tot standaard verheven. Tegenwoordig zijn er andere, snellere en veiliger encryptieschemas als DSA, ECDSA en El Gamal, maar voor de meeste toepassingen is RSA nog steeds bruikbaar (de aanvallen zijn goeddeels theoretisch of hebben een beperkte impact).
 
 ### Onder de motorkap
 
@@ -99,6 +99,7 @@ Bij ISEC gebruiken we RSA om asymcrypt te illustreren. RSA is in 1977 bedacht 
 De hoofdonderdelen van de keypair: N = 3233, E = 17, D = 413
 
 > KGV = Kleinst Gemene Veelvoud (het kleinste getal dat een veelvoud is van beide factoren)
+> 780 / (61-1) = 13 en 780 / (53-1) = 15
 >
 > Relatief priem: er bestaat geen getal waardoor beide factoren deelbaar zijn. Ofwel: de grootste gemene deler is 1.
 >
@@ -115,10 +116,10 @@ De hoofdonderdelen van de keypair: N = 3233, E = 17, D = 413
 - Kunnen op twee manieren geëncodeerd worden: digital (DER) en Base64 ASCII (PEM)
 - Extensies: .CRT, .CER, .KEY, soms ook .PEM en .DER
 
-X.509 is de standaard voor opslag van keys. Deze standaard wordt gedefinieerd in RFC 5280.  
-Er zijn meerdere standaarden voor het gebruik van certificaten, deze worden PKCS of Public Key Certificate Services genoemd.
-Certficaten kunnen op twee manieren geëncodeerd worden: digitaal of als ASCII tekst.  
-Je kunt een certificaat iedere extensie geven maar in de praktijk komt het neer op de oorspronkelijke .CRT, de door Microsoft aangehouden .CER, .KEY (vooral voor private keys) en de .PEM of .DER waarmee meteen de encodering duidelijk is.
+> X.509 is de standaard voor opslag van keys. Deze standaard wordt gedefinieerd in RFC 5280.  
+> Er zijn meerdere standaarden voor het gebruik van certificaten, deze worden PKCS of Public Key Certificate Services genoemd.
+> Certficaten kunnen op twee manieren geëncodeerd worden: digitaal of als ASCII tekst.  
+> Je kunt een certificaat iedere extensie geven maar in de praktijk komt het neer op de oorspronkelijke .CRT, de door Microsoft aangehouden .CER, .KEY (vooral voor private keys) en de .PEM of .DER waarmee meteen de encodering duidelijk is.
 
 ## Asymmetrische crypto: toepassingen
 
@@ -158,7 +159,7 @@ Hiermee wordt gegarandeerd dat zelfs **een minimale wijziging** in één van de 
 
 ## Collisions
 
-> Twee of meer verschillende blokken ide dezelfde hash genereren
+> Twee of meer verschillende blokken die dezelfde hash genereren
 
 Of:
 
@@ -166,7 +167,7 @@ Of:
 
 De weerstand tegen collisions bepaalt de veiligheid van de hash-functie!
 
-De effectiviteit van een hashfunctie wordt bepaald door de mate van weerstand tegen **“collisions”** of **“Botsingen”**. We spreken van een collision wanneer twee blokken, bestanden of berichten (per ongeluk of expres) **exact dezelfde** hash leveren wanneer ze door een hash-functie heen gehaald worden.
+De effectiviteit van een hashfunctie wordt bepaald door de mate van weerstand tegen **“collisions”** of **“botsingen”**. We spreken van een collision wanneer twee blokken, bestanden of berichten (per ongeluk of expres) **exact dezelfde** hash leveren wanneer ze door een hash-functie heen gehaald worden.
 
 Een nauwere definitie is “**de mogelijkheid om een bestand/blok/pakket aan te maken op zo’n manier dat het een willekeurige, van te voren bepaalde hash genereert wanneer het door een hash-functie gehaald wordt**”. Hierdoor wordt het mogelijk om het ene bestand/blok/pakket door het andere te vervangen zonder dat dit opvalt. In 2016 is dit gedemonstreerd met twee PDF bestanden die inhoudelijk verschilden maar beide exact dezelfde MD5 én SHA1 hashes hadden (dubbele collision!).
 

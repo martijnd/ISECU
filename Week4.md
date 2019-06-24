@@ -33,16 +33,16 @@ ISO heeft dus idd standaarden die “het standaard wijnglas” en “het standaa
 
 ## ISO-27000 (en verder)
 
-- Familie van standaarden, van 27000 tot 27042
+- Familie van standaarden, van **27000 tot 27042**
 - Sluit naadloos aan op andere ISO-standaarden
-- 27001 beschrijft de eisen, 27002 beschrijft de controlepunten uit 27001, 27018 gaat over privacyinformatie in cloud-services, 27032 over cybersecurity richtlijnen, etcetera…
-  Belangrijkste eis: Alles documenteren
+- **27001** beschrijft de **eisen**, **27002** beschrijft de **controlepunten** uit 27001, **27018** gaat over **privacyinformatie** in cloud-services, **27032** over **cybersecurity** **richtlijnen**, etcetera…
+  Belangrijkste eis: **Alles documenteren**
 
 De ISO normen voor ISMS vinden we in de ISO-27XXX reeks. Deze reeks vormt de wereldwijde standaard, mede omdat ze zo goed aansluiten op andere ISO-normeringen als ISO 9001 “Kwaliteitsmanagement”.
 
 De eerste 3 normen (27001 t/m 3) zijn algemeen van zin (toepasbaar voor iedere organisatie), in de verdere normen worden meer specifieke regels gedefinieerd.
 
-De belangrijkste regel uit 27kX is dat alle, ALLE werkzaamheden volgens vastgestelde processen en procedures uitgevoerd moeten worden.
+De belangrijkste regel uit 27kX is dat alle, **ALLE** werkzaamheden volgens vastgestelde processen en procedures uitgevoerd moeten worden.
 
 ## ISO-27001 certificering
 
@@ -123,10 +123,15 @@ Requirements komen dus onder meer voort uit normen. We kunnen voor ieder wissewa
 
 - European Telecommunication Standards Institute
   Bepaalt EU standaarden
-- EN/ES: Europese (verplichte) standaard, EG: Niet verplichte aanwijzing, TS: technische specificatie, TR: technisch verslag van informatieve aard.
+  - EN/ES: Europese (verplichte) standaard,
+  - EG: Niet verplichte aanwijzing,
+  - TS: technische specificatie,
+  - TR: technisch verslag van informatieve aard.
 - Voorbeeld: EN 319 411-1 “Electronic Signatures and Infrastructures (ESI) Policy and security requirements”
 
-ETSI bepaalt alle telecom-standaarden voor Europa. Daarnaast houdt ETSI zich bezig met crypto- en technische normering voor ICT-toepassingen. Er zijn 4 soorten normen: verplichte standaard, optionele aanwijzing, technische specificatie en informatief verslag. Het voorbeeld omschrijft de manier waarop een certificatenserver voor digitale handtekeningen beheerd dient te worden. Nogal ambtelijk, nietwaar?
+ETSI bepaalt alle telecom-standaarden voor Europa. Daarnaast houdt ETSI zich bezig met crypto- en technische normering voor ICT-toepassingen. Er zijn 4 soorten normen: verplichte standaard, optionele aanwijzing, technische specificatie en informatief verslag.
+
+Het voorbeeld omschrijft de manier waarop een certificatenserver voor digitale handtekeningen beheerd dient te worden. Nogal ambtelijk, nietwaar?
 
 ## FIPS
 
