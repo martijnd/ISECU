@@ -19,7 +19,7 @@ Producten zijn de technische middelen die cryptografische primitieven bruikbaar 
 
 ### Voorbeeld: TLS
 
-- Transport Layer Security (TCP);
+- **T**ransport **L**ayer **S**ecurity (TCP);
 - Gebruikt asymmetrische encryptie om servers te identificeren en sleutels uit te wisselen;
 - Uitgewisselde sleutels worden gebruikt voor symmetrisch versleutelde communicatie gedurende sessie;
 - Heette tot 1999 Secure Sockets Layer/SSL.
@@ -162,7 +162,8 @@ Het probleem met dit systeem is dat je dus van iedere private key op aarde de pu
 - CSR wordt certificaat;
 - Bestand wordt met private key gecrypt;
 - Bestand + certificaat worden verzonden;
-- Ontvanger decrypt certificaat met public key CA;Hiermee is de authenticiteit van het certificaat bevestigd (“verification”);
+- Ontvanger decrypt certificaat met public key CA;
+  Hiermee is de authenticiteit van het certificaat bevestigd (“verification”);
 - Ontvanger decrypt bestand met het nu ge-decrypte en gevalideerde certificaat.
 
 Als je een certificaat besteld voor je webserver wordt dit gecrypt door de CA’s hoofd- of “root”-certificaat. De public keys behorende bij de cert staan dan ook in de trustlist van je device/OS/browser.

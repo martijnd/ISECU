@@ -162,7 +162,9 @@ Op basis van “Authorisation Object’s”.
 - **Role Based Access Control**:
   Ieder te beveiligen object wordt toegekend aan één of meerdere rollen, voorzien van een context en/of rechten. Gebruikers krijgen rollen toegewezen.
 
-Als we IAM geregeld hebben moeten we rechten toe gaan kennen. ACL en RBAC zijn twee voorbeelden van autorisatiemethoden die veel toegepast worden. ACL vinden we terug op \*nix filesystems, RBAC zie je bijvoorbeeld op Windows terugkomen.
+Als we IAM geregeld hebben moeten we rechten toe gaan kennen.
+
+ACL en RBAC zijn twee voorbeelden van autorisatiemethoden die veel toegepast worden. ACL vinden we terug op \*nix filesystems, RBAC zie je bijvoorbeeld op Windows terugkomen.
 
 ### ACL vs. RBAC
 
@@ -178,7 +180,7 @@ Als we IAM geregeld hebben moeten we rechten toe gaan kennen. ACL en RBAC zijn
 ### Kan het ook anders?
 
 - ABAC – Attribute Based Access Control. Toegangscontrole op basis van context van de gebruiker.
-- GBAC – Graph Based Access Control.Toegangscontrole op basis van workflow.
+- GBAC – Graph Based Access Control. Toegangscontrole op basis van workflow.
 - En vele andere methoden!
 
 _(Is het jullie trouwens opgevallen dat het verloop van Defense in Depth tot hier in één keer door ging? Dát is wat we eerder “elegant” noemden!)_
