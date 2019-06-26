@@ -23,7 +23,7 @@ Alice verstuurt Bob een bericht, wat ze versleutelt met haar vertrouwelijke sleu
 ## Hoe kan dat?
 
 - Sleutels zijn aan elkaar gelinkt
-- Relatie tussen sleutels is (Waarschijnlijk) niet te kraken
+- Relatie tussen sleutels is (waarschijnlijk) niet te kraken
 - Gebaseerd op de aanname dat factorisatie een hard probleem is
 
 De sleutels in een keypair zijn aan elkaar gelinkt, dat is duidelijk. Anders zou het onmogelijk zijn iets te encrypten met de een en te de-crypten met de ander.
@@ -99,6 +99,7 @@ Bij ISEC gebruiken we RSA om **asymcrypt** te illustreren. RSA is in 1977 bedach
 De hoofdonderdelen van de keypair: N = 3233, E = 17, D = 413
 
 > KGV = Kleinst Gemene Veelvoud (het kleinste getal dat een veelvoud is van beide factoren)
+> https://www.beterrekenen.nl/website/index.php?pag=255
 > 780 / (61-1) = 13 en 780 / (53-1) = 15
 >
 > Relatief priem: er bestaat geen getal waardoor beide factoren deelbaar zijn. Ofwel: de grootste gemene deler is 1.

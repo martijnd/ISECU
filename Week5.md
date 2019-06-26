@@ -14,7 +14,7 @@ Producten zijn de technische middelen die cryptografische primitieven bruikbaar 
 - ISO-cert: Nee. Is beleid
 - DES: Nee, is een primitive
 - RSA: Nee, is een primitive
-- DV-certificaat: Ja, combinatie van primitive “encryptie” en beleid “identiteitsbeheer”
+- D(omein)V(alidatie)-certificaat: Ja, combinatie van primitive “encryptie” en beleid “identiteitsbeheer”
 - Sterk wachtwoord: Ja, combinatie van primitive “hashing” en beleid “toegangsbeheer”
 
 ### Voorbeeld: TLS
@@ -30,8 +30,8 @@ TLS is een mooi handvat voor deze les, omdat we heel veel van de onderwerpen van
 
 - Universele manier om asymmetrische encryptie in te regelen (herinneren jullie je PKCS nog?);
 - Bestaat in twee vormen: Web-of-Trust en Public Key Infrastructure;
-  - WOT: Als je iemand kent vertrouw je zijn/haar certificaat;
-  - PKI: Er zijn autoriteiten die certificaten uit mogen geven (“CA’s”) en hun “trust” betekent jouw “trust”;
+  - **WOT**: Als je iemand kent vertrouw je zijn/haar certificaat;
+  - **PKI**: Er zijn autoriteiten die certificaten uit mogen geven (“CA’s”) en hun “trust” betekent jouw “trust”;
 - Bekende Certificate Authorities: GeoTrust, Comodo, Staat der Nederlanden, Let’s Encrypt.
 
 PKCS: Use-cases voor certificaten/keypairs. Public Key Cryptography Standards
@@ -106,25 +106,25 @@ Het plaatje legt conceptueel uit hoe DFH werkt. Beiden voeren een aparte bereken
 
 ## Diffie-Hellman – de wiskunde
 
-- Alice en Bob spreken een modulus ‘m’ en een basisgetal ‘g’ af. Het basisgetal moet een primitieve wortel zijn in die modulus!
-- Alice kiest een geheim getal ‘a’ en verstuurt Bob “g^a mod = A”;
-- Bob kiest een geheim getal ‘b’ en verstuurt Alice “g^b mod m = B”;
-- Alice berekent “B^a mod m = S”;
-- Bob berekent “A^b mod m = S”.
+- Alice en Bob spreken een modulus ‘n’ en een basisgetal ‘g’ af. Het basisgetal moet een primitieve wortel zijn in die modulus!
+- Alice kiest een geheim getal ‘a’ en verstuurt Bob “g^a mod n = A”;
+- Bob kiest een geheim getal ‘b’ en verstuurt Alice “g^b mod n = B”;
+- Alice berekent “B^a mod n = S”;
+- Bob berekent “A^b mod n = S”.
 
 Beiden komen op S uit, zonder dat dit getal ooit over de lijn is gegaan.
 
 ## Diffie-Hellman – een voorbeeld
 
-- Laat modulus ‘m’ = 23 en laat basisgetal ‘g’= 5
+- Laat modulus ‘n’ = 23 en laat basisgetal ‘g’= 5
 - Alice kiest a = 4 en verstuurt A:
-  - g (5)^a (4) mod m (23)= A (4);
+  - g (5)^a (4) mod n (23)= A (4);
 - Bob kiest b = 3 en verstuurt B:
-  - g (5)^b (3) mod m (23) = B (10);
+  - g (5)^b (3) mod n (23) = B (10);
 - Alice berekent S volgens:
-  - B (10)^a (4) mod m (23) = S (18)”;
+  - B (10)^a (4) mod n (23) = S (18)”;
 - Bob berekent S volgens:
-  - A (4)^b (3) mod m (23) = S (18)”.
+  - A (4)^b (3) mod n (23) = S (18)”.
 
 Zie je? Beiden komen uit op S=18, zonder dat dit getal ooit verstuurd is.
 
@@ -136,14 +136,14 @@ Door TLS 1.2 ondersteunde algoritmen:
 
 - AES (block)
 - Seed (block)
-- 3DES (block)
+- 3DES (block) \*
 - Camelia (block)
 - ARIA (block)
-  - GOST (block)
+  - GOST (block)\*
     - ChaCha (stream)
-    - RC4 (stream)
+    - RC4 (stream)\*
 
-3DES, GOST en RC4 zijn deprecated. Niet meer gebruiken! (gaan eruit bij TLS 1.3)
+\*3DES, GOST en RC4 zijn deprecated. Niet meer gebruiken! (gaan eruit bij TLS 1.3)
 
 ## Digitale handtekeningen
 
@@ -211,6 +211,8 @@ Kan werken in de fysieke laag (laag 1), linklaag (laag 2) of in de internetlaag 
 - PPTP: Opereert in de linklaag, point-to-point;
 - VLAN: Opereert in de fysieke laag, site-to-site;
 
+\* Door een flinke hoeveelheid truuks
+
 ### Packet encapsulation: de basis van VPN
 
 ![packet-encapsulation](images/packet-encapsulation.png "packet-encapsulation")
@@ -231,7 +233,7 @@ Ipsec voegt een header/trailer toe (adressering etc) en crypt de inhoud van het 
 - Met name de “Secure Coding Principles” zijn hierin van belang;
 - Het leeuwendeel van de zwakheden in computersystemen zijn te herleiden op een vrij kleine set aan fouten!
 
-### Secure Coding
+## Secure Coding Principles
 
 ![secure-coding](images/secure-coding.jpg "secure-coding")
 
@@ -247,7 +249,7 @@ Ipsec voegt een header/trailer toe (adressering etc) en crypt de inhoud van het 
 - Zonder verdere configuratie zo veilig mogelijk;
 - Dus niet de windows methode: “alles mag tenzij het is dichtgezet”!
 
-Deze normen zijn specifiek voor één bepaalde doelgroep opgesteld. De logos onderop betreffen NEN-7510 “Informatiebeveiliging in de zorg”, het Thuiswinkel waarborg en PCI-DSS voor het afhandelen van creditcard betalingen.
+Deze normen zijn specifiek voor één bepaalde doelgroep opgesteld. De logo's onderop betreffen NEN-7510 “Informatiebeveiliging in de zorg”, het Thuiswinkel waarborg en PCI-DSS voor het afhandelen van creditcard betalingen.
 
 ### Verdediging in diepte
 

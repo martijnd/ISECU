@@ -40,7 +40,7 @@ Beiden bestaan uit 9 posities die in string 1 volledig willekeurig gevuld zijn. 
 - Interface met hardware vult entropy pool: CPU-klokken, stroomvoorziening, antennes...
 - Hash- of cryptofunctie ("cipher") maakt uit pool langere random strings
 
-> Omdat willekeur zó belangrijk is voor veilig computergebruik wordt met ieder OS wel een CSPRNG meegeleverd. Unix heeft /dev/random of /dev/urandom, windows heeft de functie CryptGenRandom in de W32.CryptoApi zitten. Maar, met John von Neumann’s uitspraak van een paar slides geleden in het achterhoofd (“State of Sin”) dienen we wél een bron van absolute willekeur te gebruiken om herhaalbaarheid uit te sluiten. Daarom maakt iedere CSPRNG gebruik van één of meerdere hardwareinterfaces waarmee een hogere mate van entropie bewerkstelligd kan worden. Vaak wordt **het tik-verschil tussen twee hardwareklokken** (cpu en memory) gebruikt als input. Sommige meer specialistische systemen (SafeNet) gebruiken fluctuaties in het stroomniveau of een antenne waarmee kosmische straling gemeten kan worden. Sommige experimentele systemen gebruiken een Geiger-Muller buis en een kleine hoeveelheid radioactief materiaal om input te verzamelen. Deze entropie wordt door een encryptie of hash-functie gehaald (komt later nog terug!) en dat resulteert in (pseudo-)willekeurige reeksen.
+> Omdat willekeur zó belangrijk is voor veilig computergebruik wordt met ieder OS wel een CSPRNG meegeleverd. Unix heeft /dev/random of /dev/urandom, windows heeft de functie CryptGenRandom in de W32.CryptoApi zitten. Maar, met John von Neumann’s uitspraak van een paar slides geleden in het achterhoofd (“State of Sin”) dienen we wél een bron van absolute willekeur te gebruiken om herhaalbaarheid uit te sluiten. Daarom maakt iedere CSPRNG gebruik van één of meerdere hardwareinterfaces waarmee een hogere mate van entropie bewerkstelligd kan worden. Vaak wordt **het tik-verschil tussen twee hardwareklokken** (cpu en memory) gebruikt als input. Sommige meer specialistische systemen (SafeNet) gebruiken **fluctuaties in het stroomniveau of een antenne waarmee kosmische straling gemeten kan worden**. Sommige experimentele systemen gebruiken een Geiger-Muller buis en een kleine hoeveelheid radioactief materiaal om input te verzamelen. Deze entropie wordt door een encryptie of hash-functie gehaald (komt later nog terug!) en dat resulteert in (pseudo-)willekeurige reeksen.
 
 ## Cryptofunctie
 
@@ -86,12 +86,12 @@ gebruikt verschillende doch wiskundig aan elkaar verbonden keys voor en- en decr
 encryptiefunctie waarbij de plaintext in blokken van een vaste lengte versleuteld wordt.
 
 **Stream ciphers**
-encryptiefucntie waarbij de plaintext in een doorlopende stroom versleuteld wordt.
+encryptiefunctie waarbij de plaintext in een doorlopende stroom versleuteld wordt.
 
 ## Substitutie vs Transformatie
 
 **Substitutie: De griekse "Scytale"**
-De Scytale werd door de oude Grieken gebruikt om berichtne te versleutelen. Door ontvanger en verzender van dezelfde stok te voorzien konden op een veilige manier berichten worden overgedragen.
+De Scytale werd door de oude Grieken gebruikt om berichten te versleutelen. Door ontvanger en verzender van dezelfde stok te voorzien konden op een veilige manier berichten worden overgedragen.
 
 **Transformatie: Enigma**
 De Enigma was een Duits systeem wat in WO2 gebruikt werd om de communicatie tussen onderzeeërs en het thuisfront te beveiligen. Dit elektromechanische systeem kon alleen gekraakt worden door de inzet van enorme hoeveelheden mankracht.
@@ -100,27 +100,33 @@ Substitutiefuncties zijn goeddeels in onbruik geraakt - de plaintext is namelijk
 
 ## Symmetrische en asymmetrische encryptie
 
+### Symmetrische encryptie
+
 - 1 sleutel voor beide partijen - symmetrisch
 - Makkelijk maar link: hoe hou je de sleutel veilig?
+
+Het probleem met symcrypt is dat de sleutel uitgewisseld en op twee plaatsen beheerd moet worden. Dit brengt risicos met zich mee.
+
+### Asymmetrische encryptie
 
 - 2 sleutels, 1 voor ver- en 1 voor ontsleutelen.
 - Lastiger maar veiliger
 
-Het probleem met symcrypt is dat de sleutel uitgewisseld en op twee plaatsen beheerd moet worden. Dit brengt risicos met zich mee. Asymcrypt heeft als nadelen dat het beheren van een aparte sleutel voor ont- en vercijferen lastiger is, dat de sleutels groter moeten zijn om veiligheid te waarborgen en dat het veel tijd kost om een sleutelpaar te maken.
+Asymcrypt heeft als nadelen dat het beheren van een aparte sleutel voor ont- en vercijferen lastiger is, dat de sleutels groter moeten zijn om veiligheid te waarborgen en dat het veel tijd kost om een sleutelpaar te maken.
 
 ## Block- en Stream ciphers
 
-**Block**
+### Block
 
 - Vooral toepasbaar voor bulk-encryptie
 - Versleuteling in 'brokken' van gelijk formaat
 - Ieder blok dient als input voor het volgende blok
 - Voorbeelden: **AES en DES**
 
-**Stream**
+### Stream
 
 - Vooral toepasbaar voor encryptie in een sessie
-- Versleuteling in continue sytroom
+- Versleuteling in continue stroom
 - Sleutel maakt (pseudo)random data die wordt gecombineerd met de plaintext
 - Voorbeelden: **RC4, ChaCha**
 
@@ -140,8 +146,8 @@ Sleutel werkt als input voor een algoritme dat resulteert in een pseudo-random s
 
 ## Blockciphers: Codebook en Chaining
 
-![BlockCiphers](images/blockciphers-1.png "BlockCiphers")
 ![BlockCiphers](images/blockciphers-2.png "BlockCiphers")
+![BlockCiphers](images/blockciphers-1.png "BlockCiphers")
 
 Als je ieder nieuw block afzonderlijk crypt kan dat onveilig worden. Deze **“ECB”**-encryptie verbergt namelijk niet alle patronen! Dus, om veilig te zijn moeten we ervoor zorgen dat iedere encryptieslag wordt beinvloed door de ciphertext van het voorgaande block. Dit doen we met een **Block Chaining encryption** mechanisme. Hierbij dient de uitkomst van iedere encryptieronde (deels) als input voor de volgende ronde.  
 Wanneer we het eerste block crypten hebben we natuurlijk geen voorgaande ciphertext om als input te gebruiken. Om deze juist te kunnen encrypten is een **“Initialization Vector”** of IV nodig. Deze kan random gekozen (een **“Nonce”** of **“Number Used Once”**) en met de ciphertext meegestuurd worden, of als standaard instelling gekozen worden.

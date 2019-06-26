@@ -16,8 +16,8 @@ Om ISMS’en te kunnen meten, borgen en vergelijken worden “normen” gedefini
 
 ## Information Security Management Systems (“ISMS”)
 
-- Term afkomstig van de British Standards Institute of “BSI”
-- BSI bepaalt standaarden voor nationaal gebruik (UK)
+- Term afkomstig van de British Standards Institute of **“BSI”**
+- **BSI** bepaalt standaarden voor nationaal gebruik (UK)
 - Sommige van deze standaarden worden aangepast voor internationaal gebruik
 - Internationale standaarden worden bepaald en beheerd door de International Standards Organisation: “ISO”
 
@@ -123,13 +123,18 @@ Requirements komen dus onder meer voort uit normen. We kunnen voor ieder wissewa
 
 - European Telecommunication Standards Institute
   Bepaalt EU standaarden
-  - EN/ES: Europese (verplichte) standaard,
-  - EG: Niet verplichte aanwijzing,
-  - TS: technische specificatie,
-  - TR: technisch verslag van informatieve aard.
+  - **EN/ES**: Europese (verplichte) standaard,
+  - **EG**: Niet verplichte aanwijzing,
+  - **TS**: technische specificatie,
+  - **TR**: technisch verslag van informatieve aard.
 - Voorbeeld: EN 319 411-1 “Electronic Signatures and Infrastructures (ESI) Policy and security requirements”
 
-ETSI bepaalt alle telecom-standaarden voor Europa. Daarnaast houdt ETSI zich bezig met crypto- en technische normering voor ICT-toepassingen. Er zijn 4 soorten normen: verplichte standaard, optionele aanwijzing, technische specificatie en informatief verslag.
+ETSI bepaalt alle telecom-standaarden voor Europa. Daarnaast houdt ETSI zich bezig met crypto- en technische normering voor ICT-toepassingen. Er zijn 4 soorten normen:
+
+- verplichte standaard
+- optionele aanwijzing
+- technische specificatie
+- informatief verslag.
 
 Het voorbeeld omschrijft de manier waarop een certificatenserver voor digitale handtekeningen beheerd dient te worden. Nogal ambtelijk, nietwaar?
 

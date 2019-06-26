@@ -41,7 +41,7 @@ Hiervoor zijn nodig: **Standaardisatie, professionalisering, en meetbaarheid**
 Voorbeelden: geheimschrift, encryptie, toegangsbeperkingen
 
 > Vertaling: **Vertrouwelijkheid**
-> Dit is het doel waar iedereen direct aan denkt wanneer ze met informatiebeveiliging te maken krijgen en betreft het beperken van toegang tot informatie. Echter, niet-toegankelijke informatie had net zo goed niet kunnen bestaan, dus wordt gebruiksrecht toegekend of ontzegd al naar gelang iemand deze toegang nodig heeft. Voorbeelden hiervan zijn ouderwets geheimschrift, de moderne computer-versie hiervan (enncryptie) en het beperken van toegang tot informatie, bijvoorbeeld door deze in een kluis op te bergen.
+> Dit is het doel waar iedereen direct aan denkt wanneer ze met informatiebeveiliging te maken krijgen en betreft het beperken van toegang tot informatie. Echter, niet-toegankelijke informatie had net zo goed niet kunnen bestaan, dus wordt gebruiksrecht toegekend of ontzegd al naar gelang iemand deze toegang nodig heeft. Voorbeelden hiervan zijn ouderwets geheimschrift, de moderne computer-versie hiervan (encryptie) en het beperken van toegang tot informatie, bijvoorbeeld door deze in een kluis op te bergen.
 
 ### Integrity
 
@@ -93,7 +93,7 @@ Zoals de doelen van informatiebeveiliging in drieën kunnen worden verdeeld kunn
 
 - Policies = beleid
 - De interne en externe spelregels voor bedrijven, overheid en andere organisaties
-- Bronnen: wwet- en regelgeving, normeringen, certificeringen, "Common sense"
+- Bronnen: wet- en regelgeving, normeringen, certificeringen, "Common sense"
 - Gewoon bedrijfskunde dus
 
 > Beleid is het “regelboek” aan de hand waarvan een organisatie opereert. De regels die het beleid vormen hebben (natuurlijk) een oorsprong. Deze oorsprong kan verschillen: wetten, normenkaders waaraan een organisatie graag wil voldoen, certificeringen die behaald moeten worden en natuurlijk ouderwets boerenverstand (dit laatste vaak aan de hand van een risicoinschatting). We proberen de bedrijfskunde in dit vak beperkt te houden, maar zullen er niet aan ontkomen om jullie ook hieraan te laten snuffelen.
