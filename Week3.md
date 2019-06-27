@@ -58,7 +58,7 @@ Dan is het oorspronkelijke getal ook deelbaar door 3!
 - Makkelijk in sommige gevallen, moeilijk in andere gevallen
 - Het moeilijkste bij producten van priemgetallen
 
-Zoals al eerder gezegd is **factorisatie** een probleem voor **asymmetrische encryptie**. Nu is factorisatie is voor een computer meestal vrij makkelijk, tenzij het getal **a** heel groot is, en **b** uit het product van twee priemgetallen bestaat. Een priemgetal is een getal dat **alleen deelbaar is door zichtzelf en het getal 1** – een getal dat het product is van twee priemgetallen heeft dus maar nooit meer dan vier factoren – **die twee priemgetallen, zichzelf en het getal 1**.
+Zoals al eerder gezegd is **factorisatie** een probleem voor **asymmetrische encryptie**. Nu is factorisatie voor een computer meestal vrij makkelijk, tenzij het getal **a** heel groot is, en **b** uit het product van twee priemgetallen bestaat. Een priemgetal is een getal dat **alleen deelbaar is door zichtzelf en het getal 1** – een getal dat het product is van twee priemgetallen heeft dus maar nooit meer dan vier factoren – **die twee priemgetallen, zichzelf en het getal 1**.
 
 MAAR DIT IS NIET WISKUNDIG BEWEZEN!
 

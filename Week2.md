@@ -163,7 +163,7 @@ Wanneer we het eerste block crypten hebben we natuurlijk geen voorgaande ciphert
 - Later verbeterd door 3-dubbele uitvoering (Triple DES of 3DES)
 
 **DES** is een (nu verouderd) **chain blockcipher**. DES is bedacht door de **NSA**, gebaseerd op IBM’s Lucifer-cipher maar dan met een **64-bits (waarvan 8 checksum)** in plaats van **128-bits sleutel** zodat de US Government makkelijker in kan breken als dat nodig bleek. Er is dus niet nieuws onder de horizon.
-DES was slecht qua security, maar **makkelijk, snel en toegestaan door de US Government**. Daaorm werd het dé standaard. Om de beveiliging te verbeteren werd later een 3-dubbele implementatie bedacht maar: “polish a turd, it’s still just a turd”.
+DES was slecht qua security, maar **makkelijk, snel en toegestaan door de US Government**. Daarom werd het dé standaard. Om de beveiliging te verbeteren werd later een 3-dubbele implementatie bedacht maar: “polish a turd, it’s still just a turd”.
 
 ---
 
