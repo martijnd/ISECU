@@ -1,4 +1,4 @@
-# Information Security
+# Week 1 | Information Security
 
 Informatiebeveiliging, waarom?
 

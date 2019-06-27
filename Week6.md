@@ -1,4 +1,4 @@
-# InfoSec in de praktijk
+# Week 6 | InfoSec in de praktijk
 
 ## De infosec-praktijk
 

@@ -1,4 +1,4 @@
-# Een kort overzicht
+# Week 3 | Een kort overzicht
 
 - Primitives
   - Randomness
