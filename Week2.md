@@ -147,6 +147,9 @@ Sleutel werkt als input voor een algoritme dat resulteert in een pseudo-random s
 ## Blockciphers: Codebook en Chaining
 
 ![BlockCiphers](images/blockciphers-2.png "BlockCiphers")
+
+---
+
 ![BlockCiphers](images/blockciphers-1.png "BlockCiphers")
 
 Als je ieder nieuw block afzonderlijk crypt kan dat onveilig worden. Deze **“ECB”**-encryptie verbergt namelijk niet alle patronen! Dus, om veilig te zijn moeten we ervoor zorgen dat iedere encryptieslag wordt beinvloed door de ciphertext van het voorgaande block. Dit doen we met een **Block Chaining encryption** mechanisme. Hierbij dient de uitkomst van iedere encryptieronde (deels) als input voor de volgende ronde.  
