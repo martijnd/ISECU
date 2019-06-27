@@ -66,10 +66,10 @@ Het ISMS van een organisatie kan gecertificeerd worden volgens de ISO27001 norme
 
 - Onderken problemen
 - Identificeer verbeterpunten
-- Definieer oplossingen.
+- Definieer oplossingen
 
-**Management**: bepalen strategie, opzetten ISMS
-De eerste fase, waarbij de operaties worden geïnventariseerd en probleempunten worden geïdentificeerd.
+**Management**: Bepalen strategie, opzetten ISMS  
+**Plan**: De eerste fase, waarbij de operaties worden geïnventariseerd en probleempunten worden geïdentificeerd.
 
 ### Do-fase
 
@@ -77,8 +77,8 @@ De eerste fase, waarbij de operaties worden geïnventariseerd en probleempunten 
 - Gebruik nieuwe methodes
 - Experimenteer met vernieuwingen
 
-**Operaties**: development, systeembeheer
-**Do**: het doorvoeren van verbeteringen op de werkvloer.
+**Operaties**: Development, systeembeheer  
+**Do**: Het doorvoeren van verbeteringen op de werkvloer.
 
 ### Check-fase
 
@@ -86,9 +86,8 @@ De eerste fase, waarbij de operaties worden geïnventariseerd en probleempunten 
 - Vergelijk met de oude methode
 - Kwantificeer de verbeteringen
 
-**Audits**: pentesting, red-teams,
-toezichthouders
-**Check**: het meten van de vernieuwde bedrijfsprocessen en vergelijken met de voorgaande manieren.
+**Audits**: Pentesting, red-teams, toezichthouders  
+**Check**: Het meten van de vernieuwde bedrijfsprocessen en vergelijken met de voorgaande manieren.
 
 ### Act-fase
 
@@ -96,7 +95,7 @@ toezichthouders
 - Leg de nieuwe inzichten vast
 - Pas het geleerde toe in de dagelijkse praktijk
 
-**Management**: reorganisatie, wijzigingsmanagement
+**Management**: Reorganisatie, wijzigingsmanagement  
 **Act**: Keuzes maken en de beste optie doorvoeren in alle bedrijfsprocessen
 
 ## ISO 27000-requirements
@@ -117,7 +116,7 @@ ISO-2700X is gebaseerd op requirements. Vanuit wet, contracten en risicoanalyses
 - Vaak per jurisdictie geregeld: NL, EU, VS…
 - Maar kan ook per vakgebied: banken, zorg, ICT…
 
-Requirements komen dus onder meer voort uit normen. We kunnen voor ieder wissewasje een risicoinschatting doen maar het is veeeeel makkelijker om ons aan normenkaders te houden – deze zijn (als het goed is) gedocumenteerd en worden breed gedragen. Sommige normen focussen op een specifiek domein, bijvoorbeeld de techniek (voorbeeld: Kiwa) of huishoudelijke materialen (Nederlandse Vereniging van Huisvrouwen). Soms zijn ze per rechtsgebied geregeld: alleen NL, heel Europa of juist de VS. Tot slot zijn er normen die alleen gelden voor een specifieke industrie of vakgebied.
+Requirements komen dus onder meer voort uit normen. We kunnen voor ieder wissewasje een risico-inschatting doen maar het is veeeeel makkelijker om ons aan normenkaders te houden – deze zijn (als het goed is) gedocumenteerd en worden breed gedragen. Sommige normen focussen op een specifiek domein, bijvoorbeeld de techniek (voorbeeld: Kiwa) of huishoudelijke materialen (Nederlandse Vereniging van Huisvrouwen). Soms zijn ze per rechtsgebied geregeld: alleen NL, heel Europa of juist de VS. Tot slot zijn er normen die alleen gelden voor een specifieke industrie of vakgebied.
 
 ## ETSI
 
