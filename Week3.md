@@ -100,6 +100,7 @@ De hoofdonderdelen van de keypair: N = 3233, E = 17, D = 413
 
 > KGV = Kleinst Gemene Veelvoud (het kleinste getal dat een veelvoud is van beide factoren)
 > https://www.beterrekenen.nl/website/index.php?pag=255
+>
 > 780 / (61-1) = 13 en 780 / (53-1) = 15
 >
 > Relatief priem: er bestaat geen getal waardoor beide factoren deelbaar zijn. Ofwel: de grootste gemene deler is 1.
