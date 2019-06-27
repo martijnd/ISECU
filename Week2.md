@@ -174,6 +174,6 @@ De sleutel wijzigt volgens een **permutatietabel**. Dit is nodig omdat DES ander
 
 ---
 
-![DES](images/DES.jpg "DES")
+![DES](images/DES.png "DES")
 
 _Note: Lees de sheets voor uitleg over DES_
