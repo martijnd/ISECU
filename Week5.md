@@ -1,4 +1,4 @@
-# Week 5 | Products
+# Week 5 - Products
 
 Products: de combinaties van policies en primitives die direct toepasbaar zijn in de praktijk.
 

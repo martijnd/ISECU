@@ -1,4 +1,4 @@
-# Week 2 | Primitieven
+# Week 2 - Primitieven
 
 Primitieven zijn de wiskundige bouwstenen van cryptografische protocollen die gebruikt worden om systemen te beveiligen. Deze componenten worden gebruikt om hashes, encryptie en digitale handtekeningen mogelijk te maken. Zonder primitieven is het onmogelijk om de CIA tirade te bewerkstelligen.
 
